@@ -2,6 +2,10 @@
 
 A community arcade room experience featuring shotgun-themed sound effects and a collection of AI-coded games. This project builds upon the Circuit Sanctum Arcade, reconfiguring it into a vibrant, interactive gaming hub.
 
+**Live site:** GitHub Pages at [https://aialchemistart.github.io/Circuit-Sanctum-Arcade/](https://aialchemistart.github.io/Circuit-Sanctum-Arcade/)
+
+[vibeversearcade.com](https://vibeversearcade.com) forwards to that GitHub Pages URL. This `gh-pages` branch is what GitHub Pages publishes.
+
 ## Features
 
 - Interactive arcade cabinet with game selection interface
@@ -33,3 +37,9 @@ See the KEY_MANIPULATIONS.md file for a record of important code changes and mod
 ## Credits
 
 Created as an expansion of the Circuit Sanctum Arcade, which was originally based on the AI Alchemist's Lair project.
+
+## License
+
+Vibeverse Arcade is released under the MIT License. See [LICENSE](LICENSE).
+
+Copyright (c) 2025–2026 Matthew Walker (AI Alchemist).
