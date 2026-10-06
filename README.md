@@ -2,8 +2,9 @@
 
 Vibeverse Arcade is a browser game: an isometric pixel room you walk through, with arcade cabinets that open other games in the browser. It continues the earlier [AI Alchemist's Lair](https://github.com/AIalchemistART/AIalchemistsLAIR) and lives in this repository (`Circuit-Sanctum-Arcade`).
 
-**Live site:** [https://vibeversearcade.com](https://vibeversearcade.com)  
-That domain redirects to the GitHub Pages build: [https://aialchemistart.github.io/Circuit-Sanctum-Arcade/](https://aialchemistart.github.io/Circuit-Sanctum-Arcade/)
+**Live site:** GitHub Pages at [https://aialchemistart.github.io/Circuit-Sanctum-Arcade/](https://aialchemistart.github.io/Circuit-Sanctum-Arcade/)
+
+[vibeversearcade.com](https://vibeversearcade.com) forwards to that GitHub Pages URL.
 
 The published site is the `gh-pages` branch. The default branch, `main`, is an earlier snapshot of the same room. Both use the same engine. `gh-pages` adds more cabinets, touch controls, a web app manifest, and a visitor counter.
 
@@ -63,7 +64,7 @@ Objects placed in the room from `main.js` include wall and ceiling signs, four r
 - Vanilla JavaScript, loaded as ES modules from `index.html` → `main.js`
 - Canvas 2D isometric rendering (`isometricRenderer.js`, `scene.js`)
 - Web Audio oscillators for cabinet sounds (no audio files in this branch)
-- No bundler. `main` has no `package.json`. The `gh-pages` branch has a `package.json` whose start script is `serve .`, plus a Netlify function used by the visitor counter
+- No bundler. `main` has no `package.json`. The `gh-pages` branch has a `package.json` whose start script is `serve .`. The live visitor counter is computed in the browser and does not call a backend.
 
 Because the game uses ES modules, open it through a local static server. Opening `index.html` as a `file://` URL will not load the modules.
 
@@ -81,8 +82,14 @@ Any other static server works the same way (`npx serve .` on the `gh-pages` bran
 
 ## Status
 
-The public site is the `gh-pages` deployment. `main` still runs the room and the two cabinets above, and it does not include the later cabinets or the touch-control and visitor-counter files.
+The public site is GitHub Pages from the `gh-pages` branch. `main` still runs the room and the two cabinets above, and it does not include the later cabinets or the touch-control and visitor-counter files.
 
 Scene records for Circuit Sanctum and Neon Phylactery are still in `sceneData.js`. They are not separate walkable rooms on the live floor. The north door is an exit to the Lair, which is the previous project, not a second arcade room inside this build.
 
 There is no automated test suite in this repository.
+
+## License
+
+Vibeverse Arcade is released under the MIT License. See [LICENSE](LICENSE).
+
+Copyright (c) 2025–2026 Matthew Walker (AI Alchemist).
